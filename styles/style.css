@@ -66,13 +66,27 @@
 
 .images {
     width: 100%;
-    border: 15px solid black;
-    background: black;
+    border: 15px solid rgb(225, 226, 221);
+    background: rgb(225, 226, 221);
     box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25);
 }
 
+.images-box:hover {
+    -webkit-animation: mover 0.5s infinite  alternate;
+    animation: mover 0.5s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
 .images-box {
-    flex-basis: 26%;
+    flex-basis: 27%;
     padding: 20px;
 }
 

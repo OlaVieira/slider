@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider</title> 
+    <title>Slider</title>
+    <link href="dist/css/lightbox.min.css" rel="stylesheet"> 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
     </style>
@@ -18,25 +19,32 @@
     
     <section class="gallery page__gallery">
         <div class="images-box img__gallery">
-                <img class="images img1__img__gallery" src="./images/1.PNG" alt="">
+            <a class="popup__gallery" data-lightbox="www" href="img/1.jpg" data-title="Zdjęcie numer 1"><img class="images img1__img__gallery" src="./images/1.PNG" alt="">
         </div>
         
         <div class="images-box img__gallery">
-                <img class="images img2__img2__gallery" src="./images/2.PNG" alt="">
+            <a class="popup__gallery" data-lightbox="www" href="img/2.jpg" data-title="Zdjęcie numer 2"><img class="images img2__img2__gallery" src="./images/2.PNG" alt="">
             </div>
         <div class="images-box img__gallery">
-                <img class="images img3__img3__gallery" src="./images/3.PNG" alt="">
+            <a class="popup__gallery" data-lightbox="www" href="img/3.jpg" data-title="Zdjęcie numer 3"><img class="images img3__img3__gallery" src="./images/3.PNG" alt="">
             </div>
         <div class="images-box img__gallery">
-                <img class="images img4__img4__gallery" src="./images/4.PNG" alt="">
+            <a class="popup__gallery" data-lightbox="www" href="img/4.jpg" data-title="Zdjęcie numer 4"><img class="images img4__img4__gallery" src="./images/4.PNG" alt="">
             </div>
         <div class="images-box img__gallery">
-                <img class="images img5__img5__gallery" src="./images/5.PNG" alt="">
+            <a class="popup__gallery" data-lightbox="www" href="img/5.jpg" data-title="Zdjęcie numer 5"><img class="images img5__img5__gallery" src="./images/5.PNG" alt="">
         </div>
         <div class="images-box img__gallery">
-            <img class="images img6__img6__gallery" src="./images/6.PNG" alt="">
+            <a class="popup__gallery" data-lightbox="www" href="img/6.jpg" data-title="Zdjęcie numer 6"><img class="images img6__img6__gallery" src="./images/6.PNG" alt="">
         </div>
-            
+
+        <script src="src/jquery-3.2.1.min.js"></script>
+        <script src="dist/js/lightbox.js"></script>
+        <script>
+         lightbox.option({
+          'albumLabel': "Zdjęcie %1 z %2"
+         })
+        </script>  
     </section>
 
     
