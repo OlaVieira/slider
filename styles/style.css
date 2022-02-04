@@ -16,7 +16,7 @@
     rgb(185, 235, 145) 99.22%); 
 }
 
-.slider {
+.header {
     position: absolute;
     top: 10%;
     left: 50%;
@@ -47,8 +47,12 @@
     color: black;
 }
 
-.title__slider, .subtitle__slider {
+.title__header, .subtitle__header {
     flex-basis: 10vh;
     text-align: center;
     line-height: 10vh;
+}
+
+.gallery {
+    flex-grow: 1;
 }
