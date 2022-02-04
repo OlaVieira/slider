@@ -5,37 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slider</title>
-    <link href="dist/css/lightbox.min.css" rel="stylesheet"> 
+    <link href="dist/css/lightbox.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
     </style>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body class="page">
-    <header class="header page__header">
-        <h1 class="title title__header">Meet Kratos</h1>
-        <h2 class="subtitle subtitle__header">The dog of war</h2>  
+    <header class="header-title page__header">
+        <h1 class="title header__title">Meet Kratos</h1>
+        <h2 class="subtitle header__subtitle">The dog of war</h2>
     </header>
-    
+
     <section class="gallery page__gallery">
         <div class="images-box img__gallery">
-            <a  data-lightbox="image" href="img/1.PNG" data-title="Photo 1" class="popup__gallery"><img class="images" src="./img/1min.PNG" alt="">
-        </div>
-        
-        <div class="images-box img__gallery">
-            <a class="popup__gallery" data-lightbox="image-slider" href="img/2.PNG" data-title="Photo 2"><img class="images" src="./img/2min.PNG" alt="">
-            </div>
-        <div class="images-box img__gallery">
-            <a class="popup__gallery" data-lightbox="image-slider" href="img/3.PNG" data-title="Photo 3"><img class="images" src="./img/3min.PNG" alt="">
-            </div>
-        <div class="images-box img__gallery">
-            <a class="popup__gallery" data-lightbox="image-slider" href="img/4.PNG" data-title="Photo 4"><img class="images" src="./img/4min.PNG" alt="">
-            </div>
-        <div class="images-box img__gallery">
-            <a class="popup__gallery" data-lightbox="image-slider" href="img/5.PNG" data-title="Photo 5"><img class="images" src="./img/5min.PNG" alt="">
+            <a  data-lightbox="image-slider" href="img/1.PNG" data-title="Photo 1" class="popup__gallery"><img class="images" src="./img/1min.PNG" alt=""></a>
         </div>
         <div class="images-box img__gallery">
-            <a class="popup__gallery" data-lightbox="image-slider" href="img/6.PNG" data-title="Photo 6"><img class="images" src="./img/6min.PNG" alt="">
+            <a class="popup__gallery" data-lightbox="image-slider" href="img/2.PNG" data-title="Photo 2"><img class="images" src="./img/2min.PNG" alt=""></a>
+            </div>
+        <div class="images-box img__gallery">
+            <a class="popup__gallery" data-lightbox="image-slider" href="img/3.PNG" data-title="Photo 3"><img class="images" src="./img/3min.PNG" alt=""></a>
+            </div>
+        <div class="images-box img__gallery">
+            <a class="popup__gallery" data-lightbox="image-slider" href="img/4.PNG" data-title="Photo 4"><img class="images" src="./img/4min.PNG" alt=""></a>
+            </div>
+        <div class="images-box img__gallery">
+            <a class="popup__gallery" data-lightbox="image-slider" href="img/5.PNG" data-title="Photo 5"><img class="images" src="./img/5min.PNG" alt=""></a>
+        </div>
+        <div class="images-box img__gallery">
+            <a class="popup__gallery" data-lightbox="image-slider" href="img/6.PNG" data-title="Photo 6"><img class="images" src="./img/6min.PNG" alt=""></a>
         </div>
 
         <script src="src/jquery-3.2.1.min.js"></script>
@@ -44,9 +43,9 @@
          lightbox.option({
           'albumLabel': "Image %1 of %2"
          })
-        </script>  
+        </script>
     </section>
 
-    
+
 </body>
 </html>
